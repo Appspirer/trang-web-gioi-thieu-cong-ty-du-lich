@@ -1,0 +1,789 @@
+@font-face {
+  font-family: "Georgia Bold";
+  src: url("./includes/font/GeorgiaBold.ttf");
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("./includes/font/GeorgiaRegular.ttf");
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro Demi";
+  src: url("./includes/font/AvenirNextLTPro-DemiCn.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("./includes/font/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next Medium";
+  src: url("./includes/font/AvenirNextLTPro-Medium.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container__section {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+}
+
+/**banner-start**/
+
+.banner {
+  background-image: url("includes/images/bg-photo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 40px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.border__cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-width: 1px 1px 0 1px;
+  border-color: #ecb84c;
+  border-style: solid;
+}
+
+.border__cover .title {
+  font-family: "Georgia Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 227px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 32%;
+  top: 197px;
+}
+
+.border__cover .content {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  width: 407px;
+  margin-top: 15px;
+}
+
+.border__cover span {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  left: 0px;
+  bottom: -28px;
+  align-items: center;
+}
+
+.border__cover span:before {
+  margin-right: 15px;
+}
+
+.border__cover span:after {
+  margin-left: 15px;
+}
+
+.border__cover span:before,
+.border__cover span:after {
+  content: "";
+  height: 1px;
+  background: #ecb84c;
+  display: block;
+  width: 50%;
+}
+
+/**banner-end**/
+
+/**header-start**/
+
+.header {
+  height: 64px;
+  width: 100%;
+}
+
+.navbar {
+  height: 63px;
+}
+
+.navbar-nav {
+  gap: 42px;
+  display: flex;
+}
+
+.navbar-nav a {
+  gap: 42px;
+  display: flex;
+  font-family: "Avenir Next LT Pro Demi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #909090;
+  position: relative;
+}
+
+.navbar-nav a .active:first-child {
+  color: #4e5665;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 78px;
+  height: 4px;
+  background: #ecb84c;
+}
+
+.line__header {
+  background-color: #d0d4d8;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  height: 1px;
+  width: 100%;
+}
+
+/**header-end**/
+
+/**information__trip-start**/
+
+.information__trip {
+  margin-top: 83px;
+  width: 100%;
+  height: 467px;
+}
+
+.information__trip__wrap {
+  padding: 0px 137px 0px 135px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.information__trip__wrap .title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4e5665;
+}
+
+.information__trip__wrap .content {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  padding: 0px 335px 0px 335px;
+}
+
+.information__trip__wrap .content span a {
+  font-family: "Avenir Next LT Pro Demi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ecb84c;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.information__trip__item {
+  display: flex;
+  justify-content: center;
+  gap: 154px;
+}
+
+.information__trip__item .item {
+  width: 80px;
+  height: 158px;
+  margin-bottom: 80px;
+}
+
+.information__trip__item .item img {
+  width: 80px;
+  height: 80px;
+}
+
+.item .number {
+  font-family: "Avenir Next Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #4e5665;
+  margin-top: 32px;
+  margin-bottom: 2px;
+}
+
+.item .text {
+  font-family: "Avenir Next Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #909090;
+}
+
+/**information__trip-end**/
+
+/**about__trip-start**/
+
+.about__trip {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.about__trip__wrap {
+  padding: 0px 237px 0px 235px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__trip__wrap div p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #4e5665;
+  text-align: center;
+}
+
+.about__trip__wrap .content {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+  margin-top: 44px;
+  margin-bottom: 64px;
+  padding: 0px 230px 0px 230px;
+  text-align: start;
+}
+
+.about__trip__wrap .content span a {
+  font-family: "Avenir Next LT Pro Demi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ecb84c;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.first__photo {
+  display: flex;
+  justify-content: end;
+  height: 430px;
+  width: 971px;
+  margin-bottom: 101px;
+  position: relative;
+}
+
+.content__left {
+  position: absolute;
+  top: 70px;
+  height: 289px;
+  left: 0;
+  width: 470px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.content__left div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.content__left div::after {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  border-top: 2px solid #ecb84c;
+  border-left: 2px solid #ecb84c;
+}
+
+.content__left div::before {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  bottom: 19px;
+  right: 19px;
+  border-bottom: 2px solid #ecb84c;
+  border-right: 2px solid #ecb84c;
+}
+
+.about__trip__wrap .title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  color: #4e5665;
+}
+
+.about__trip__wrap .content-photo {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+  text-align: start;
+}
+
+.second__photo {
+  display: flex;
+  justify-content: start;
+  height: 430px;
+  width: 971px;
+  margin-bottom: 121px;
+  position: relative;
+}
+
+.content__right {
+  position: absolute;
+  top: 70px;
+  height: 289px;
+  right: 0;
+  width: 470px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.content__right div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.content__right div::after {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  border-top: 2px solid #ecb84c;
+  border-right: 2px solid #ecb84c;
+}
+
+.content__right div::before {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  bottom: 19px;
+  left: 19px;
+  border-bottom: 2px solid #ecb84c;
+  border-left: 2px solid #ecb84c;
+}
+
+/**about__trip-end**/
+
+/**show__car-start**/
+
+.show__car {
+  width: 100%;
+  height: 731px;
+  margin-bottom: 80px;
+}
+
+.show__car__wrap {
+  padding: 0px 137px 0px 135px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.show__car__wrap div div img {
+  margin-right: 4px;
+}
+
+.show__car__wrap div p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4e5665;
+  margin-bottom: 3px;
+}
+
+.show__car__wrap div div p {
+  font-family: "Avenir Next LT Pro Demi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ecb84c;
+  margin-bottom: 7px;
+}
+
+.show__car__wrap .content {
+  padding: 53px 99px 0px 101px;
+}
+
+.show__car__wrap .content p {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+  text-align: start;
+  padding: 0px 230px;
+  margin-bottom: 81px;
+}
+
+/**show__car-end**/
+
+/**photo__trip-start**/
+
+.photo__trip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 858px;
+}
+
+.photo__trip__text {
+  padding: 0px 237px 0px 235px;
+}
+
+.photo__trip__text .title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #4e5665;
+  text-align: center;
+}
+
+.photo__trip__text .content {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+  text-align: start;
+  padding: 0px 231px;
+  margin-top: 42px;
+  margin-bottom: 49px;
+}
+
+.line__photo {
+  width: 270px;
+  height: 1px;
+  background: #d0d4d8;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.container__slide {
+  width: 1440px;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.wrap:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider {
+  position: relative;
+  z-index: 200;
+  padding: 0;
+  margin-top: 56px;
+  width: 100%;
+}
+
+.item.slick-slide {
+  width: 640px;
+  height: 480px !important;
+  transition: transform 0.4s;
+  position: relative;
+  filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.slick-slide:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.4s;
+}
+
+.item.slick-slide {
+  transform: scale(1, 0.7) translate(540px);
+  margin-right: -170px;
+}
+
+.item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+  transform: scale(1, 0.7) translate(-540px);
+  z-index: 5;
+}
+
+.item.slick-slide.slick-center + .slick-slide {
+  transform: scale(1, 0.9) translate(-270px);
+  z-index: 10;
+}
+
+.item.slick-slide.slick-active {
+  transform: scale(1, 0.9) translate(270px);
+}
+
+.item.slick-slide.slick-center {
+  transform: scale(1);
+  z-index: 30;
+}
+
+.slick-center:after {
+  opacity: 0;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  line-height: 50px;
+  margin-top: 0px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  z-index: 300;
+  outline: none;
+}
+
+.arrow_prev span img {
+  width: 40px;
+  height: 40px;
+  left: 380px !important;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow_next span img {
+  width: 40px;
+  height: 40px;
+  left: 1020px !important;
+  position: absolute;
+  cursor: pointer;
+}
+
+/**photo__trip-end**/
+
+/**footer-start**/
+
+.footer {
+  width: 100%;
+  height: 314px;
+  background: #f8f8f8;
+  border-top: 1px solid #f8f8f8;
+}
+
+.footer__box {
+  width: 1440px;
+}
+
+.footer__wrap {
+  padding: 54px 0px 0px 135px;
+  display: flex;
+}
+
+.logo div img {
+  width: 147px;
+  height: 46px;
+  margin-bottom: 21px;
+}
+
+.footer__wrap .title {
+  font-family: "Avenir Next Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #4e5665;
+  margin-bottom: 20px;
+}
+
+.footer__wrap .content {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #505050;
+  margin-bottom: 8px;
+}
+
+.footer__wrap div a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.company {
+  width: 113px;
+  margin-left: 53px;
+}
+
+.discover {
+  width: 132px;
+  margin-left: 87px;
+}
+
+.connect {
+  width: 139px;
+  margin-left: 68px;
+}
+
+.blog {
+  width: 304px;
+  margin-left: 61px;
+}
+
+.connect a img {
+  margin-right: 12px;
+}
+
+.dropdown__country {
+  width: 140px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #d9dde1;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 10px 14px 9px 8px;
+}
+
+.dropdown__country div img {
+  width: 20px;
+  height: 13px;
+}
+
+.dropdown__country div p {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #505050;
+}
+
+.dropdown__country .dropdown__arrow {
+  width: 8px;
+  height: 4px;
+  margin-top: 5px;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.dropdown-menu {
+  min-width: 140px !important;
+}
+
+.dropdown-menu .dropdown-item div img {
+  width: 20px;
+  height: 13px;
+}
+
+.dropdown-item {
+  height: 32px;
+}
+
+.dropdown-item div {
+  gap: 20px;
+}
+
+.dropdown-menu .dropdown-item div p {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #505050;
+}
+
+.footer__end p {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #505050;
+  margin-top: 40px;
+}
+
+/**footer-end**/
